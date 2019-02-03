@@ -1,0 +1,72 @@
+#player1{
+    text-align: center ; 
+    /* margin:300px; */
+    /* padding:200px; */
+}
+
+body{
+	font-family: Roboto, sans-serif ;
+	background-image:url(../images/BG.gif);
+	 background-repeat: no-repeat; 
+	background-size: cover;
+	color:white;
+
+
+}
+
+#mainSection{
+     margin-top: 50px;
+}
+
+#leftPanel{
+    background: black;
+    text-align:center;
+    border:2px solid rgb(87, 82, 82);
+     /* opacity:.7; */
+
+}
+
+#rightPanel{
+    background:black;
+    text-align:center;
+    border:2px solid rgb(87, 82, 82);
+    /* opacity:.7; */
+}
+
+#middleRow{
+    margin-top:70px;
+    /* margin-left:2px; */
+    /* margin-right:2px; */
+ /*   background:black; */
+    /* text-align:center; */
+    /* opacity:.0; */
+}
+#result
+{
+    /* text-align:center; */
+    /* margin-left:2px; */
+    /* margin-right:2px; */
+    background:black;
+}
+#input{
+   
+}
+.image{
+    margin-top:30px;
+    width:80px;
+    height:80px;
+}
+.vsImage{
+    margin-top:45px;
+}
+.option{
+  background-color:whitesmoke  ;
+}
+#caption {
+    /* text-align:center; */
+    font-size: 30px;
+    /* margin-left:140px; */
+}
+#name-submit {
+	background-color: rgba(252, 176, 64, 1);  /* yellow */
+} 

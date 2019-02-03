@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Mono" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Added a link to Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- Firebase Reference -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+        <div class="container">
+              <div id=mainSection>
+                <div class="row" >
+                    <!-- column1 -->
+                        <div class="col-lg-3" id="leftPanel" class="text-center">
+                               <div>
+                                    <h4 id="you" class="text-center mt-3">Your Name </h4>
+                                    <img src="assets/images/yourAvator.jpg" alt="Your Name" width=150 height=100 class=
+                                    "mt-4 mb=4"> 
+                                 
+                               </div>
+                                <!-- Weapons: rock paper scissor images -->
+                                <div class="mt-4">
+                                    <button type="button" class="option btn btn-outline" id="Lrock" disabled>Rock</button>
+                                    <button type="button" class="option btn btn-outline" id="Lpaper" disabled>Paper</button>
+                                    <button type="button" class="option btn btn-outline" id="Lscissor" disabled>Scissor</button>
+                                
+                                </div>
+                                <!-- win loss tie -->
+                                <div  class="mt-4">
+                                    <h5 id="win1">Win:</h5>
+                                    <h5 id="lose1">Loss: </h5>
+                                    <h5 id="tie1">Tie:</h5>
+                                </div>
+                        </div>
+                           <!-- column1 -->
+                        <div class="col-lg-6">
+                            <!-- middle column - then row -->
+                            
+                                <h1 class="text-center">Rock Paper Scissor</h1>
+                           
+                                <div class="row text-center" id="middleRow" >
+                                        <div class="col-lg-5">
+                                                <div id="option1">
+                                                </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                                <div id="vs">
+                                                </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                                <div id="option2">
+                                                </div>
+                                        </div>
+                                </div>
+                               
+                                <div class="row" >
+                                        <div class="col-lg-12 text-center" id="result" >
+                                            </div>
+                                </div>
+                                <div class="row"  >
+                                    <div class="col-lg-12 text-center" id="caption" >
+
+                                    </div>
+                                    </div>
+                                <div class="row" >
+                                    <div class="col-lg-12 text-center"  id="input">
+                                        <input type="text" id="name-input" value="" />
+                                        <input type="button" id="name-submit" value="Start" />
+                                        <h5 class="mt-2">Enter your name to start the game.</h5>
+                                    </div>
+                                </div>
+              
+                        </div>
+                               <!-- column1 -->
+                        <div class="col-lg-3" id="rightPanel" class="text-center " >
+                                <div>
+                                    <h4 id="opponent" class="text-center  mt-3">Opponent </h4>    
+                                    <img src="assets/images/oppo.jpg" alt="Your Name"  width=150 height=100 class=
+                                    "mt-4 ">
+                                        
+                                    </div>
+                                     <!-- Weapons: rock paper scissor images -->
+                                     <div class="mt-4">
+                                            <button type="button" class="option btn btn-outline" id="Rrock" disabled>Rock</button>
+                                            <button type="button" class="option btn btn-outline" id="Rpaper" disabled>Paper</button>
+                                            <button type="button" class="option btn btn-outline" id="Rscissor" disabled>Scissor</button>
+                                        
+                                        </div>
+                                       <div class="mt-4">
+                                        <h5 id="win2">Win:</h5>
+                                        <h5 id="lose2">Loss: </h5>
+                                        <h5 id="tie2">Tie:</h5>
+                                    </div>
+                               
+                        </div>
+                </div>
+                <div class="row">
+                       
+                        <div class="offset-md-4 col-md-4 text-center" >
+                   <!-- Chat Box -->
+                   <form>
+                        <div class="form-group">
+                                <label for="chat-display"></label>
+                                <textarea class="form-control chat-display" rows="2"></textarea>
+                                <br>
+                                <input type="text" id="chat-input" value="Enter Chat" />
+                                <input type="button" id="send-chat" value="Send" />
+                          <!-- <label for="chat-input"></label>
+                          <input type="text" class="form-control" id="chat-input" placeholder="Enter Chat">
+                          <button type="submit" class="btn btn-primary" id="send-chat" >Submit</button> -->
+                        </div>
+                        
+                        
+                      </form> <!-- End Chat -->
+                        
+                    </div>
+                </div>
+
+            </div>
+                 
+        </div>
+
+        <script src="assets/javascript/game.js"></script>
+</body>
+</html>
