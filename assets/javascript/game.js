@@ -281,7 +281,7 @@ function win()
     
     database.ref("/players/player1").update({win:yourWin, result:"win",gameOn:false} );
     database.ref("/players/player2").update({lose:opponentLose, result:"lost",gameOn:false} );
-     var msg = `${player1.name}'s ${uChoice} beats ${player2.name}'s ${pChoice}. ${player1.name} Won!!` ;
+     var msg = `${uChoice} beats ${pChoice}. ${player1.name} Won!!` ;
     database.ref("/players/result").set({msg:msg} );
     
 }
