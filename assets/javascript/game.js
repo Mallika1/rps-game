@@ -66,6 +66,10 @@ var pChoice = " " ;
 	database.ref("/players").on('value', function(snapshot) {
         data = snapshot.val();
         console.log(data);
+        if(player1.name == " ")
+        {
+            $("#caption").text("Waiting for player1 to join...");
+        }
         if (snapshot.child("player1").exists() )  
         {
             console.log(snapshot.val().player1.name);
@@ -77,6 +81,10 @@ var pChoice = " " ;
              player1.option1 = snapshot.val().player1.option1;
              player1.gameOn = snapshot.val().player1.gameOn;
             $("#you").text(player1.name);
+            if(player1.name != " ")
+            {
+                $("#caption").text("player1 joined...");
+            }
             if(player1.name != " " &&  player2.name == " ")
             {
                 $("#caption").text("Waiting for player2 to join...");
@@ -358,7 +366,7 @@ function removeImages()
     database.ref("/players/player2").update({choice:" ", img:" ", img_added:false, gameOn:true} );
     database.ref("/players/result").set({msg:" "} );
    
-            $("#caption").text("Waiting for " + player1.name + "'s turn...");
+    $("#caption").text("Waiting for " + player1.name + "'s turn...");
     enableLeftPanelBtn();
    
 }
@@ -407,7 +415,7 @@ function removeImages()
 
         // Send a message to chat 
         var msg = snapshot.val().name + " has disconnected!";
-
+        $(".caption").text(msg + "Waiting For player2 to join");
         // Get a key for the disconnection chat entry
         var chatKey = database.ref().child("/chat/").push().key;
 
