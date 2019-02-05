@@ -1,6 +1,6 @@
 # rps-game
 
-![Alt Text](https://mallika1.github.io/GifTastic1/assets/images/rps.jpg)
+![Alt Text](https://mallika1.github.io/rps-game/assets/images/rps.jpg)
 
 How it works :
 
